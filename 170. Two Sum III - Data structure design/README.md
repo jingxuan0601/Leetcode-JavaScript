@@ -1,4 +1,7 @@
-Problems: (https://leetcode.com/problems/two-sum-iii-data-structure-design/)
+### Problems:    
+
+(https://leetcode.com/problems/two-sum-iii-data-structure-design/)   
+
 Design and implement a TwoSum class. It should support the following operations: add and find.
 
 add - Add the number to an internal data structure.
@@ -15,5 +18,6 @@ add(3); add(1); add(2);
 find(3) -> true
 find(6) -> false
 
-Solution:
+### Solution:   
+
 Map
