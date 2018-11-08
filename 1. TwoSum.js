@@ -18,18 +18,21 @@ return [0, 1].
  */
  
 var twoSum = function(nums, target) {
+    let indices = [-1, -1];
     if (nums == null || nums.length == 0) {
-    	return [-1, -1];
+        return indices;
     }
 
     let map = new Map();
-    for (let i = 0; i < nums.length; i++) {
-    	if (map.has(target - nums[i])) {
-    		return [map.get(target - nums[i]), i];
-    	} 
+    nums.forEach((num, index) =>
+        {
+            
+            if (map.has(target - num)) {
+                indices = [map.get(target - num), index];
+            } 
 
-    	map.set(nums[i], i);
-    }
+            map.set(num, index);
+        });
 
-    return [-1, -1];
+    return indices;
 };
