@@ -26,7 +26,6 @@ var twoSum = function(nums, target) {
     let map = new Map();
     nums.forEach((num, index) =>
         {
-            
             if (map.has(target - num)) {
                 indices = [map.get(target - num), index];
             } 
