@@ -1,0 +1,5 @@
+- use let instead of var
+- Map -- set, has
+- do not user for in with Arrays, use numeric loop or arr.forEach() instead
+- iterate through Map: for ... of map.keys()
+- arr.forEach(function(element) {});
